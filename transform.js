@@ -86,6 +86,11 @@ async function parseCountryInfo() {
  * Save countries.json with array of geonameids
  */
 async function saveCountriesList(countries) {
+  // Ensure data directory exists
+  if (!existsSync(DATA_DIR)) {
+    await mkdir(DATA_DIR, { recursive: true });
+  }
+  
   const geonameids = countries.map(c => c.geonameid);
   const countriesJsonPath = join(DATA_DIR, 'countries.json');
   await writeFile(countriesJsonPath, JSON.stringify(geonameids, null, 2));
