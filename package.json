@@ -1,0 +1,23 @@
+{
+  "name": "geo",
+  "version": "1.0.0",
+  "description": "An open, normalized dataset of world administrative boundaries in JSON form, built to simplify address handling, location filtering, and offline-capable applications.",
+  "homepage": "https://github.com/akaoio/geo#readme",
+  "bugs": {
+    "url": "https://github.com/akaoio/geo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akaoio/geo.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10"
+  }
+}
